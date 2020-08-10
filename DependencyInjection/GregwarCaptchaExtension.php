@@ -39,6 +39,6 @@ class GregwarCaptchaExtension extends Extension
         $container->setParameter('gregwar_captcha.config.whitelist_key', $config['whitelist_key']);
 
         $resources = $container->getParameter('twig.form_themes');
-        $container->setParameter('twig.form.resources', array_merge(array('@GregwarCaptcha/captcha.html.twig'), $resources));
+        $container->setParameter('twig.form_themes', array_merge(array('@GregwarCaptcha/captcha.html.twig'), $resources));
     }
 }
